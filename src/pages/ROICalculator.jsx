@@ -184,18 +184,32 @@ function ROICalculator() {
             {/* Roles */}
             <div style={s.selectorCard}>
               <div style={s.selectorLabel}>2. Select a Role</div>
-              <div style={{ maxHeight: 280, overflowY: 'auto' }}>
+              <select
+                value={roleId}
+                onChange={(e) => setRoleId(e.target.value)}
+                style={{
+                  width: '100%', padding: '14px 16px', borderRadius: 8,
+                  border: '2px solid #dee2e6', fontSize: '0.95rem', fontWeight: 600,
+                  color: '#343a40', background: '#fff', cursor: 'pointer',
+                  appearance: 'auto', marginBottom: 12,
+                }}
+              >
                 {category?.roles.map((r) => (
-                  <button
-                    key={r.id}
-                    style={s.roleBtn(roleId === r.id)}
-                    onClick={() => setRoleId(r.id)}
-                  >
-                    <div style={s.roleTitle(roleId === r.id)}>{r.title}</div>
-                    <div style={s.roleDesc}>{r.description}</div>
-                  </button>
+                  <option key={r.id} value={r.id}>{r.title}</option>
                 ))}
-              </div>
+              </select>
+              {role && (
+                <div style={{
+                  background: '#f8f9fa', borderRadius: 8, padding: '14px 16px',
+                  fontSize: '0.85rem', color: '#495057', lineHeight: 1.5,
+                }}>
+                  <div style={{ fontWeight: 700, color: '#1a1a2e', marginBottom: 4 }}>{role.title}</div>
+                  <div>{role.description}</div>
+                  <div style={{ marginTop: 8, fontSize: '0.78rem', color: '#868e96' }}>
+                    US Base: {fmt(role.us.baseSalary)} · India Base: {fmt(role.india.baseSalary)}
+                  </div>
+                </div>
+              )}
             </div>
           </div>
 
