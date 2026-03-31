@@ -226,102 +226,143 @@ const salaryData = {
     },
 
     // ═══════════════════════════════════════
-    // CATEGORY 4: LOGISTICS & FREIGHT (original)
+    // CATEGORY 4: BACK OFFICE & CLERICAL
     // ═══════════════════════════════════════
     {
-      id: 'logistics',
-      name: 'Logistics & Freight',
-      icon: '🚛',
+      id: 'back_office',
+      name: 'Back Office & Clerical',
+      icon: '📂',
       roles: [
         {
-          id: 'dispatcher',
-          title: 'Freight Dispatcher',
-          description: 'Coordinate shipments, manage carrier relationships, route optimization',
+          id: 'medical_billing',
+          title: 'Medical Billing & Coding',
+          description: 'ICD-10/CPT coding, claims submission, denial management, insurance verification, AR follow-up',
           us: {
-            baseSalary: 52000,    // SalaryExpert: $52,048; Glassdoor: $51,110 median
-            totalCost: 68000,
-            source: 'BLS, SalaryExpert, Glassdoor 2025'
+            baseSalary: 46000,    // BLS (medical records/health info): $48,780 median
+                                  // Glassdoor medical biller: $42-50K; AAPC salary survey: $45-52K
+            totalCost: 61000,
+            source: 'BLS, Glassdoor, AAPC 2025 Salary Survey'
           },
           india: {
-            baseSalary: 5100,     // SalaryExpert India: ₹4.2L entry; Indeed: ₹2.4L/yr
-                                  // Mid-range: ₹4.2L = $5,100
-            totalCost: 7650,
-            source: 'SalaryExpert India, Indeed India, AmbitionBox 2025-2026'
+            baseSalary: 5400,     // AmbitionBox: ₹3-7L; Glassdoor India medical billing: ₹3.5-6L
+                                  // Naukri (CPC certified, 3-5 yr): ₹4.5L avg; ≈ $5,400
+                                  // India is a major RCM outsourcing hub — deep talent pool
+            totalCost: 8100,
+            source: 'AmbitionBox, Glassdoor India, Naukri 2025'
           }
         },
         {
-          id: 'billing',
-          title: 'Billing Specialist',
-          description: 'Invoice processing, freight billing, accounts receivable, rate auditing',
+          id: 'logistics_back_office',
+          title: 'Logistics Back Office',
+          description: 'Freight documentation, BOL processing, shipment coordination, carrier communication, rate auditing',
           us: {
-            baseSalary: 48000,
-            totalCost: 63000,
-            source: 'Salary.com, SalaryExpert 2025'
+            baseSalary: 45000,    // BLS (logistics ops): $47K; Glassdoor: $42-48K
+            totalCost: 59000,
+            source: 'BLS, Glassdoor 2025'
           },
           india: {
-            baseSalary: 6100,     // Salary.com India: ₹5.86L; SalaryExpert: ₹5.08L
-            totalCost: 9150,
-            source: 'Salary.com India, SalaryExpert India, Glassdoor India 2025-2026'
+            baseSalary: 4800,     // AmbitionBox logistics ops: ₹3-6L; Indeed India: ₹3.5-5L
+                                  // ≈ ₹4L avg = $4,800
+            totalCost: 7200,
+            source: 'AmbitionBox, Indeed India 2025'
           }
         },
         {
-          id: 'customer_service',
-          title: 'Customer Service Rep',
-          description: 'Client communication, shipment tracking inquiries, issue resolution',
+          id: 'virtual_assistant',
+          title: 'Virtual Assistant',
+          description: 'Calendar management, email handling, travel booking, research, document prep, CRM updates',
           us: {
-            baseSalary: 40000,
-            totalCost: 53000,
-            source: 'BLS, SalaryExpert 2025'
+            baseSalary: 45000,    // Glassdoor: $40-52K; Indeed: $42-48K (full-time, dedicated)
+                                  // ZipRecruiter: $43K avg for executive VAs
+            totalCost: 59000,
+            source: 'Glassdoor, Indeed, ZipRecruiter 2025'
           },
           india: {
-            baseSalary: 4300,     // Salary.com India: ₹3.6L; SalaryExpert: ₹4.9L
-            totalCost: 6450,
-            source: 'Salary.com India, SalaryExpert India, AmbitionBox, Jooble 2025-2026'
+            baseSalary: 3600,     // AmbitionBox: ₹2-5L; Indeed India: ₹2.5-4L
+                                  // Naukri: ₹3L avg; ≈ $3,600
+            totalCost: 5400,
+            source: 'AmbitionBox, Indeed India, Naukri 2025'
           }
         },
         {
           id: 'data_entry',
           title: 'Data Entry Operator',
-          description: 'Shipment data entry, BOL processing, documentation management',
+          description: 'Document digitization, database updates, form processing, spreadsheet management, QC checks',
           us: {
-            baseSalary: 37000,
+            baseSalary: 37000,    // BLS (data entry keyers): $36,190 median; Salary.com: $37-39K
             totalCost: 49000,
             source: 'BLS, Salary.com 2025'
           },
           india: {
-            baseSalary: 3000,
+            baseSalary: 3000,     // AmbitionBox: ₹1.5-3.5L; Indeed India: ₹15-20K/mo
+                                  // ≈ ₹2.5L avg = $3,000
             totalCost: 4500,
-            source: 'Indeed India, AmbitionBox 2025'
+            source: 'AmbitionBox, Indeed India 2025'
           }
         },
         {
-          id: 'logistics_coordinator',
-          title: 'Logistics Coordinator',
-          description: 'Supply chain coordination, vendor management, shipment scheduling',
+          id: 'accounts_payable',
+          title: 'Accounts Payable / Receivable',
+          description: 'Invoice processing, payment reconciliation, vendor management, collections, financial reporting',
           us: {
-            baseSalary: 47000,
+            baseSalary: 46000,    // BLS (bookkeeping/accounting clerks): $47,440 median
+                                  // Glassdoor AP specialist: $43-50K
+            totalCost: 61000,
+            source: 'BLS, Glassdoor, Robert Half 2025'
+          },
+          india: {
+            baseSalary: 5000,     // AmbitionBox: ₹3-7L; Glassdoor India: ₹3.5-6L
+                                  // ≈ ₹4.2L avg = $5,000
+            totalCost: 7500,
+            source: 'AmbitionBox, Glassdoor India 2025'
+          }
+        },
+        {
+          id: 'customer_service',
+          title: 'Customer Service Rep',
+          description: 'Inbound/outbound calls, email support, ticket management, complaint resolution, CRM updates',
+          us: {
+            baseSalary: 40000,    // BLS (CSR): $39,680 median; SalaryExpert: $42K
+            totalCost: 53000,
+            source: 'BLS, SalaryExpert 2025'
+          },
+          india: {
+            baseSalary: 4300,     // Salary.com India: ₹3.6L; SalaryExpert: ₹4.9L gross
+                                  // BPO CSR (Jooble): ₹4.2L; ≈ $4,300
+            totalCost: 6450,
+            source: 'Salary.com India, SalaryExpert India, AmbitionBox 2025'
+          }
+        },
+        {
+          id: 'bookkeeper',
+          title: 'Bookkeeper',
+          description: 'General ledger, bank reconciliation, payroll processing, QuickBooks/Xero, monthly close',
+          us: {
+            baseSalary: 47000,    // BLS (bookkeeping clerks): $47,440; Glassdoor: $44-52K
             totalCost: 62000,
+            source: 'BLS, Glassdoor, Robert Half 2025'
+          },
+          india: {
+            baseSalary: 5400,     // AmbitionBox: ₹3-7L; Glassdoor India: ₹4-6L
+                                  // ≈ ₹4.5L avg = $5,400
+            totalCost: 8100,
+            source: 'AmbitionBox, Glassdoor India 2025'
+          }
+        },
+        {
+          id: 'hr_admin',
+          title: 'HR / Admin Assistant',
+          description: 'Employee onboarding, benefits admin, document management, scheduling, office coordination',
+          us: {
+            baseSalary: 42000,    // BLS (HR assistants): $44,530; Glassdoor: $38-46K
+            totalCost: 55000,
             source: 'BLS, Glassdoor 2025'
           },
           india: {
-            baseSalary: 5500,
-            totalCost: 8250,
-            source: 'Glassdoor India, AmbitionBox 2025'
-          }
-        },
-        {
-          id: 'track_trace',
-          title: 'Track & Trace Specialist',
-          description: 'Real-time shipment monitoring, status updates, exception management',
-          us: {
-            baseSalary: 42000,
-            totalCost: 55000,
-            source: 'BLS, Indeed 2025'
-          },
-          india: {
-            baseSalary: 4000,
-            totalCost: 6000,
-            source: 'AmbitionBox, Glassdoor India 2025'
+            baseSalary: 3600,     // AmbitionBox: ₹2-5L; Indeed India: ₹2.5-4L
+                                  // ≈ ₹3L avg = $3,600
+            totalCost: 5400,
+            source: 'AmbitionBox, Indeed India 2025'
           }
         }
       ]
