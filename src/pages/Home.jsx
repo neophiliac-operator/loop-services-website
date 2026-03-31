@@ -2,17 +2,17 @@ import { Link } from 'react-router-dom'
 import { 
   ArrowRight, Headphones, FileText, Truck, Users, 
   Target, BarChart3, Shield, Globe, CheckCircle,
-  ClipboardList, Handshake, Rocket
+  ClipboardList, Handshake, Rocket, Cpu, Monitor, Code
 } from 'lucide-react'
 import './Home.css'
 
 const services = [
-  { icon: <Headphones size={28} />, title: 'Customer Experience', desc: 'Dedicated CX teams that understand freight, logistics, and supply chain — not script readers.' },
-  { icon: <Truck size={28} />, title: 'Dispatch & Operations', desc: 'Trained dispatch specialists who manage loads, coordinate drivers, and keep shipments moving.' },
-  { icon: <FileText size={28} />, title: 'Billing & Invoicing', desc: 'Accurate, fast billing operations that reduce errors and accelerate your cash flow.' },
-  { icon: <BarChart3 size={28} />, title: 'Data Entry & Track-and-Trace', desc: 'High-volume data processing with 99%+ accuracy. Real-time shipment tracking and updates.' },
-  { icon: <Users size={28} />, title: 'Workforce Scaling', desc: 'Scale your team up or down based on demand. No long-term contracts, no hiring headaches.' },
-  { icon: <Globe size={28} />, title: 'Global Coverage', desc: 'Offshore, nearshore, onshore, and rural American teams — the right model for every role.' },
+  { icon: <Cpu size={28} />, title: 'AI-Augmented Workforce', desc: 'Our WaaS platform wraps AI around your existing tools — unified agent desktop, AI copilot, and 100% automated QA scoring.' },
+  { icon: <Code size={28} />, title: 'Technology & Development', desc: 'Full-stack engineers, DevOps, UI/UX designers, and solution architects to build and scale your tech.' },
+  { icon: <FileText size={28} />, title: 'Back Office & Clerical', desc: 'Medical billing, virtual assistants, bookkeeping, and data entry — powered by AI for 3x throughput.' },
+  { icon: <ClipboardList size={28} />, title: 'Project Management', desc: 'Scrum masters, BPO consulting, and delivery managers who keep complex projects on track.' },
+  { icon: <Headphones size={28} />, title: 'Support & Operations', desc: 'Help desk, live chat, and customer service teams augmented with AI copilot for faster resolution.' },
+  { icon: <Users size={28} />, title: 'Workforce Scaling', desc: 'Flexible offshore, nearshore, and onshore models. Scale up or down — no long-term contracts.' },
 ]
 
 const steps = [
@@ -23,10 +23,10 @@ const steps = [
 ]
 
 const stats = [
-  { value: '60%+', label: 'Average Cost Savings' },
-  { value: '99.2%', label: 'Billing Accuracy' },
+  { value: '3x', label: 'Productivity Gain' },
+  { value: '100%', label: 'QA Coverage' },
+  { value: '60%+', label: 'Cost Savings' },
   { value: '<30 Days', label: 'Time to Launch' },
-  { value: '500+', label: 'Team Members Deployed' },
 ]
 
 export default function Home() {
@@ -36,12 +36,12 @@ export default function Home() {
       <section className="hero">
         <div className="container hero-content">
           <div className="hero-text">
-            <span className="hero-badge">BPO Built for Logistics</span>
-            <h1>Build Scalable Support Teams <span className="hero-accent">Without the Overhead</span></h1>
+            <span className="hero-badge">Worker as a Service</span>
+            <h1>AI-Augmented Teams That <span className="hero-accent">Deliver Outcomes, Not Just Seats</span></h1>
             <p className="hero-subtitle">
-              We help logistics, freight, and supply chain companies build high-performing 
-              teams — offshore, nearshore, or onshore. U.S.-based leadership. Transparent pricing. 
-              Real results.
+              We don't just give you cheaper labor — we wrap AI around your existing tools to make 
+              every worker 3x more productive. AI copilot. 100% automated QA. Real-time dashboards. 
+              That's WaaS.
             </p>
             <div className="hero-actions">
               <Link to="/roi-calculator" className="btn btn-primary btn-lg">
@@ -83,10 +83,10 @@ export default function Home() {
         <div className="container">
           <div className="section-header-center">
             <span className="section-label">What We Do</span>
-            <h2 className="section-title">End-to-End Logistics Support</h2>
+            <h2 className="section-title">AI-Powered Workforce Solutions</h2>
             <p className="section-subtitle" style={{margin: '0 auto'}}>
-              From dispatch to billing to customer experience — we build the teams 
-              that keep your operations running.
+              From AI-augmented operations to back-office support — we build teams 
+              powered by our WaaS platform that deliver outcomes, not just hours.
             </p>
           </div>
           <div className="services-grid">
@@ -131,15 +131,15 @@ export default function Home() {
             <span className="section-label">Why Loop Services</span>
             <h2 className="section-title">We're Not Another Generic BPO</h2>
             <p className="section-subtitle">
-              We live and breathe logistics. Our teams speak your language — BOLs, freight classes, 
-              detention charges, TMS platforms. That specialization is the difference.
+              Most BPOs sell seats. We sell outcomes. Our WaaS platform is the difference — 
+              AI-native, tool-agnostic, and built for measurable results.
             </p>
             <ul className="why-list">
-              <li><CheckCircle size={20} /> <span><strong>Logistics-First:</strong> Every team member is trained on freight and supply chain operations</span></li>
-              <li><CheckCircle size={20} /> <span><strong>U.S. Leadership:</strong> American management bridging global teams with your expectations</span></li>
-              <li><CheckCircle size={20} /> <span><strong>Transparent Pricing:</strong> Cost-plus model — you see exactly what you pay for</span></li>
-              <li><CheckCircle size={20} /> <span><strong>Flexible Models:</strong> Offshore, nearshore, onshore, or hybrid — whatever fits</span></li>
-              <li><CheckCircle size={20} /> <span><strong>Fast Launch:</strong> Teams deployed in under 30 days, fully trained on your processes</span></li>
+              <li><CheckCircle size={20} /> <span><strong>AI-Native:</strong> Every worker is augmented with an AI copilot — real-time suggestions, auto-drafts, and smart routing</span></li>
+              <li><CheckCircle size={20} /> <span><strong>Outcomes, Not Seats:</strong> Pay for results with outcome-based pricing — not just bodies in chairs</span></li>
+              <li><CheckCircle size={20} /> <span><strong>100% QA Coverage:</strong> Every interaction scored by AI automatically — not 5% manual audits</span></li>
+              <li><CheckCircle size={20} /> <span><strong>Tool-Agnostic:</strong> Works with any TMS, CRM, email, load board — no migration required</span></li>
+              <li><CheckCircle size={20} /> <span><strong>Fast Launch:</strong> Teams deployed in under 30 days with full AI platform integration</span></li>
             </ul>
             <Link to="/contact" className="btn btn-primary" style={{marginTop: '24px'}}>
               Talk to Our Team <ArrowRight size={16} />

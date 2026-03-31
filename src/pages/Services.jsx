@@ -1,46 +1,41 @@
 import { Link } from 'react-router-dom'
 import { 
   ArrowRight, Headphones, FileText, Truck, Users, 
-  BarChart3, Globe, MapPin, Monitor, Clock, CheckCircle
+  BarChart3, Globe, MapPin, Monitor, Clock, CheckCircle,
+  Cpu, Code, ClipboardList
 } from 'lucide-react'
 import './Services.css'
 
 const offerings = [
   {
-    icon: <Truck size={32} />,
-    title: 'Dispatch & Load Management',
-    desc: 'End-to-end dispatch support including load booking, driver coordination, route optimization, and real-time status updates. Our teams integrate directly with your TMS.',
-    features: ['Load booking & assignment', 'Driver communication', 'Route optimization support', 'Real-time status tracking']
+    icon: <Cpu size={32} />,
+    title: 'WaaS Platform',
+    desc: 'Our Worker as a Service platform wraps AI around your existing tools. Unified agent desktop, AI copilot with real-time suggestions, 100% automated QA scoring, and activity capture analytics.',
+    features: ['AI copilot overlay', 'Unified agent desktop', '100% automated QA scoring', 'Real-time performance dashboards']
   },
   {
-    icon: <Headphones size={32} />,
-    title: 'Customer Experience & Support',
-    desc: 'Dedicated CX teams trained in freight and logistics terminology. We handle inquiries, complaints, proactive updates, and relationship management.',
-    features: ['Inbound/outbound support', 'Shipment status communication', 'Issue resolution & escalation', 'Customer retention programs']
+    icon: <Code size={32} />,
+    title: 'Technology & Development',
+    desc: 'Full-stack engineers, DevOps specialists, UI/UX designers, and solution architects — AI-augmented for faster delivery and higher quality output.',
+    features: ['Full-stack development', 'DevOps & cloud infrastructure', 'UI/UX design', 'Solution architecture']
   },
   {
     icon: <FileText size={32} />,
-    title: 'Billing & Invoicing',
-    desc: 'Accurate, timely billing operations that reduce errors and speed up collections. We handle invoice generation, reconciliation, and AR follow-up.',
-    features: ['Invoice generation & delivery', 'Payment reconciliation', 'Discrepancy resolution', 'AR management & follow-up']
+    title: 'Back Office & Clerical',
+    desc: 'Medical billing, virtual assistants, bookkeeping, and data entry — all powered by our WaaS platform for 3x throughput and 100% quality coverage.',
+    features: ['Medical billing & coding', 'Virtual assistants', 'Bookkeeping & accounting', 'Data entry & processing']
   },
   {
-    icon: <BarChart3 size={32} />,
-    title: 'Data Entry & Track-and-Trace',
-    desc: 'High-volume data processing with 99%+ accuracy. Shipment tracking, POD management, and system updates across multiple platforms.',
-    features: ['Shipment data entry', 'Multi-carrier tracking', 'POD processing', 'System updates & maintenance']
+    icon: <ClipboardList size={32} />,
+    title: 'Project Management',
+    desc: 'Scrum masters, BPO consulting, and delivery managers who bring structure and accountability to complex programs.',
+    features: ['Scrum masters & agile coaches', 'BPO transition consulting', 'Program management', 'Process optimization']
   },
   {
-    icon: <Users size={32} />,
-    title: 'Back Office Operations',
-    desc: 'Administrative support that keeps your business running smoothly — document management, compliance filing, and operational reporting.',
-    features: ['Document management', 'Compliance & filing', 'Operational reporting', 'Process documentation']
-  },
-  {
-    icon: <Monitor size={32} />,
-    title: 'Logistics Coordination',
-    desc: 'Full-cycle logistics coordinators who manage the flow from pickup to delivery, handling exceptions and keeping all parties informed.',
-    features: ['Pickup & delivery coordination', 'Exception management', 'Carrier communication', 'Performance reporting']
+    icon: <Headphones size={32} />,
+    title: 'Support & Operations',
+    desc: 'Help desk, live chat, and customer service teams augmented with AI copilot for faster resolution, smarter routing, and proactive issue detection.',
+    features: ['Help desk & IT support', 'Live chat & messaging', 'Customer service', 'Dispatch & operations']
   }
 ]
 
@@ -82,10 +77,10 @@ export default function Services() {
       <section className="page-header">
         <div className="container">
           <span className="section-label">Our Services</span>
-          <h1 className="page-title">Logistics Support, Done Right</h1>
+          <h1 className="page-title">Smart Workforce Solutions, Powered by AI</h1>
           <p className="page-subtitle">
-            We don't do generic call centers. We build specialized teams that understand 
-            your industry, your systems, and your customers.
+            We don't just provide cheaper labor — our WaaS approach wraps AI around your 
+            existing tools to make every worker 3x more productive, with 100% quality coverage.
           </p>
         </div>
       </section>
@@ -106,6 +101,41 @@ export default function Services() {
                 </ul>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* WAAS DIFFERENCE */}
+      <section className="section" style={{background: '#f8f9fa'}}>
+        <div className="container">
+          <div className="section-header-center">
+            <span className="section-label">The WaaS Difference</span>
+            <h2 className="section-title">Traditional BPO vs. Loop Services</h2>
+            <p className="section-subtitle" style={{margin: '0 auto'}}>
+              See why companies are switching from seat-based outsourcing to outcome-based WaaS.
+            </p>
+          </div>
+          <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: 32, marginTop: 40}}>
+            <div style={{background: '#fff', borderRadius: 16, padding: 32, border: '2px solid #dee2e6'}}>
+              <div style={{fontSize: '0.7rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: 2, color: '#868e96', marginBottom: 12}}>Traditional BPO</div>
+              <h3 style={{fontSize: '1.3rem', fontWeight: 800, marginBottom: 20, color: '#1a1a2e'}}>The Old Way</h3>
+              {['Sells seats — pay for bodies, not results', 'Uses your tools as-is, no optimization', '5% of interactions audited manually', '5-7 tasks per person per day', 'No real-time performance visibility'].map((item, i) => (
+                <div key={i} style={{display: 'flex', alignItems: 'flex-start', gap: 10, marginBottom: 12, fontSize: '0.95rem', color: '#495057'}}>
+                  <span style={{color: '#868e96', flexShrink: 0}}>✕</span>
+                  <span>{item}</span>
+                </div>
+              ))}
+            </div>
+            <div style={{background: 'linear-gradient(135deg, #4361ee 0%, #3a56d4 100%)', borderRadius: 16, padding: 32, color: '#fff'}}>
+              <div style={{fontSize: '0.7rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: 2, color: 'rgba(255,255,255,0.7)', marginBottom: 12}}>Loop WaaS</div>
+              <h3 style={{fontSize: '1.3rem', fontWeight: 800, marginBottom: 20}}>The WaaS Way</h3>
+              {['Sells outcomes — pay for results, not headcount', 'Wraps tools in AI-powered workspace', '100% of interactions AI-scored', '15-20 tasks per person per day', 'Real-time dashboards + full activity capture'].map((item, i) => (
+                <div key={i} style={{display: 'flex', alignItems: 'flex-start', gap: 10, marginBottom: 12, fontSize: '0.95rem', color: 'rgba(255,255,255,0.9)'}}>
+                  <CheckCircle size={16} style={{flexShrink: 0, marginTop: 2}} />
+                  <span>{item}</span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>

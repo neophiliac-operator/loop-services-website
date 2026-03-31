@@ -8,6 +8,7 @@ import Blog from './pages/Blog'
 import BlogPost from './pages/BlogPost'
 import ROICalculator from './pages/ROICalculator'
 import Contact from './pages/Contact'
+import WaaS from './pages/WaaS'
 import ScrollToTop from './components/ScrollToTop'
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/roi-calculator" element={<ROICalculator />} />
+          <Route path="/waas" element={<WaaS />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>

@@ -6,6 +6,7 @@ import './Navbar.css'
 const links = [
   { to: '/', label: 'Home' },
   { to: '/services', label: 'Services' },
+  { to: '/waas', label: 'WaaS Platform' },
   { to: '/roi-calculator', label: 'ROI Calculator' },
   { to: '/careers', label: 'Careers' },
   { to: '/blog', label: 'Blog' },
