@@ -7,6 +7,11 @@ const categoryColors = {
   'Operations': '#2ecc71',
   'BPO Strategy': '#f39c12',
   'Technology': '#9b59b6',
+  'AI & Automation': '#00b4d8',
+  'Project Management': '#e76f51',
+  'Back Office': '#2a9d8f',
+  'Support & Operations': '#7209b7',
+  'Workforce Strategy': '#f4a261',
 };
 
 const styles = {

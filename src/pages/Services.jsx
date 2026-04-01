@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import { 
   ArrowRight, Headphones, FileText, Truck, Users, 
   BarChart3, Globe, MapPin, Monitor, Clock, CheckCircle,
-  Cpu, Code, ClipboardList
+  Cpu, Code, ClipboardList, TrendingUp
 } from 'lucide-react'
 import './Services.css'
 
@@ -11,31 +11,43 @@ const offerings = [
     icon: <Cpu size={32} />,
     title: 'WaaS Platform',
     desc: 'Our Worker as a Service platform wraps AI around your existing tools. Unified agent desktop, AI copilot with real-time suggestions, 100% automated QA scoring, and activity capture analytics.',
-    features: ['AI copilot overlay', 'Unified agent desktop', '100% automated QA scoring', 'Real-time performance dashboards']
+    features: ['AI copilot overlay', 'Unified agent desktop', '100% automated QA scoring', 'Real-time performance dashboards'],
+    link: '/blog/ai-copilots-replacing-traditional-bpo'
   },
   {
     icon: <Code size={32} />,
     title: 'Technology & Development',
     desc: 'Full-stack engineers, DevOps specialists, UI/UX designers, and solution architects — AI-augmented for faster delivery and higher quality output.',
-    features: ['Full-stack development', 'DevOps & cloud infrastructure', 'UI/UX design', 'Solution architecture']
+    features: ['Full-stack development', 'DevOps & cloud infrastructure', 'UI/UX design', 'Solution architecture'],
+    link: '/blog/hiring-offshore-developers-what-works'
   },
   {
     icon: <FileText size={32} />,
     title: 'Back Office & Clerical',
     desc: 'Medical billing, virtual assistants, bookkeeping, and data entry — all powered by our WaaS platform for 3x throughput and 100% quality coverage.',
-    features: ['Medical billing & coding', 'Virtual assistants', 'Bookkeeping & accounting', 'Data entry & processing']
+    features: ['Medical billing & coding', 'Virtual assistants', 'Bookkeeping & accounting', 'Data entry & processing'],
+    link: '/blog/medical-billing-outsourcing-2026-cost-analysis'
   },
   {
     icon: <ClipboardList size={32} />,
     title: 'Project Management',
     desc: 'Scrum masters, BPO consulting, and delivery managers who bring structure and accountability to complex programs.',
-    features: ['Scrum masters & agile coaches', 'BPO transition consulting', 'Program management', 'Process optimization']
+    features: ['Scrum masters & agile coaches', 'BPO transition consulting', 'Program management', 'Process optimization'],
+    link: '/blog/offshore-team-needs-scrum-master'
   },
   {
     icon: <Headphones size={32} />,
     title: 'Support & Operations',
     desc: 'Help desk, live chat, and customer service teams augmented with AI copilot for faster resolution, smarter routing, and proactive issue detection.',
-    features: ['Help desk & IT support', 'Live chat & messaging', 'Customer service', 'Dispatch & operations']
+    features: ['Help desk & IT support', 'Live chat & messaging', 'Customer service', 'Dispatch & operations'],
+    link: '/blog/building-247-help-desk-one-third-cost'
+  },
+  {
+    icon: <TrendingUp size={32} />,
+    title: 'Workforce Scaling',
+    desc: 'Flexible offshore, nearshore, and onshore staffing models designed to scale your team fast — without the overhead of traditional hiring.',
+    features: ['Offshore teams (India)', 'Nearshore teams (LatAm)', 'Rural American staffing', 'Hybrid model design'],
+    link: '/blog/offshore-nearshore-onshore-which-model'
   }
 ]
 
@@ -99,6 +111,11 @@ export default function Services() {
                     <li key={j}><CheckCircle size={14} /> {f}</li>
                   ))}
                 </ul>
+                {item.link && (
+                  <Link to={item.link} style={{ color: '#4361ee', fontWeight: 600, fontSize: '0.9rem', display: 'inline-flex', alignItems: 'center', gap: 6, marginTop: 16, textDecoration: 'none' }}>
+                    Read More <ArrowRight size={14} />
+                  </Link>
+                )}
               </div>
             ))}
           </div>
