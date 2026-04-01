@@ -45,7 +45,7 @@ const s = {
     borderRadius: 16, padding: 32,
     background: isWaas ? 'linear-gradient(135deg, #EF7E2E 0%, #d96b1f 100%)' : '#fff',
     color: isWaas ? '#fff' : '#374898',
-    boxShadow: isWaas ? '0 8px 32px rgba(67,97,238,0.3)' : '0 4px 12px rgba(0,0,0,0.08)',
+    boxShadow: isWaas ? '0 8px 32px rgba(239,126,46,0.3)' : '0 4px 12px rgba(0,0,0,0.08)',
     border: isWaas ? 'none' : '2px solid #dee2e6',
     position: 'relative',
     overflow: 'hidden',
