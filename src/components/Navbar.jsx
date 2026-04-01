@@ -20,7 +20,7 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="container navbar-inner">
         <Link to="/" className="navbar-logo">
-          <img src="/loop-services-logo.svg" alt="Loop Services" className="navbar-logo-img" />
+          <img src={`${import.meta.env.BASE_URL}loop-services-logo.svg`} alt="Loop Services" className="navbar-logo-img" />
         </Link>
 
         <div className={`navbar-links ${open ? 'open' : ''}`}>

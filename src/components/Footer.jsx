@@ -11,7 +11,7 @@ export default function Footer() {
         <div className="footer-grid">
           <div className="footer-brand">
             <Link to="/" className="footer-logo">
-              <img src="/loop-services-logo.svg" alt="Loop Services" style={{ height: '40px', width: 'auto' }} />
+              <img src={`${import.meta.env.BASE_URL}loop-services-logo.svg`} alt="Loop Services" style={{ height: '40px', width: 'auto' }} />
             </Link>
             <p className="footer-desc">
               Building scalable support teams for logistics, freight, and supply chain companies. 
