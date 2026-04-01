@@ -11,8 +11,7 @@ export default function Footer() {
         <div className="footer-grid">
           <div className="footer-brand">
             <Link to="/" className="footer-logo">
-              <span className="logo-loop">Loop</span>
-              <span className="logo-services">Services</span>
+              <img src="/loop-services-logo.svg" alt="Loop Services" style={{ height: '40px', width: 'auto' }} />
             </Link>
             <p className="footer-desc">
               Building scalable support teams for logistics, freight, and supply chain companies. 
@@ -49,7 +48,7 @@ export default function Footer() {
             </div>
             <div className="footer-contact">
               <Phone size={14} />
-              <span>(555) 123-4567</span>
+              <span>(470) 730-4110</span>
             </div>
             <div className="footer-contact">
               <MapPin size={14} />
