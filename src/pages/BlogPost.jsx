@@ -3,7 +3,7 @@ import blogPosts from '../data/blogPosts';
 
 const styles = {
   hero: {
-    background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)',
+    background: 'linear-gradient(135deg, #374898 0%, #2d3d80 100%)',
     padding: '100px 0 50px',
     color: '#fff',
   },
@@ -11,7 +11,7 @@ const styles = {
     display: 'inline-flex',
     alignItems: 'center',
     gap: 8,
-    color: '#4361ee',
+    color: '#EF7E2E',
     fontWeight: 600,
     fontSize: '0.9rem',
     marginBottom: 24,
@@ -39,7 +39,7 @@ const styles = {
     fontSize: '0.8rem',
     fontWeight: 600,
     color: '#fff',
-    background: '#4361ee',
+    background: '#EF7E2E',
   },
   article: {
     maxWidth: 780,
@@ -63,7 +63,7 @@ const styles = {
   ctaTitle: {
     fontSize: '1.4rem',
     fontWeight: 700,
-    color: '#1a1a2e',
+    color: '#374898',
     marginBottom: 12,
   },
   ctaText: {
@@ -77,7 +77,7 @@ const articleCSS = `
   .blog-article h2 {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #1a1a2e;
+    color: #374898;
     margin: 32px 0 12px;
   }
   .blog-article p {
@@ -92,7 +92,7 @@ const articleCSS = `
     list-style: disc;
   }
   .blog-article strong {
-    color: #1a1a2e;
+    color: #374898;
   }
 `;
 
@@ -103,7 +103,7 @@ function BlogPost() {
   if (!post) {
     return (
       <div style={styles.notFound}>
-        <h1 style={{ fontSize: '2rem', color: '#1a1a2e', marginBottom: 16 }}>Post Not Found</h1>
+        <h1 style={{ fontSize: '2rem', color: '#374898', marginBottom: 16 }}>Post Not Found</h1>
         <p style={{ color: '#868e96', marginBottom: 24 }}>The blog post you're looking for doesn't exist.</p>
         <Link to="/blog" className="btn btn-primary">← Back to Blog</Link>
       </div>

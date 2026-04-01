@@ -3,27 +3,27 @@ import { ArrowRight, CheckCircle, Cpu, Monitor, BarChart3, Shield, Zap, Globe, T
 
 const s = {
   hero: {
-    background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)',
+    background: 'linear-gradient(135deg, #374898 0%, #2d3d80 100%)',
     padding: '120px 0 80px',
     textAlign: 'center',
     color: '#fff',
   },
   heroLabel: {
     display: 'inline-block', fontSize: '0.8rem', fontWeight: 600,
-    textTransform: 'uppercase', letterSpacing: '2px', color: '#4361ee', marginBottom: 12,
+    textTransform: 'uppercase', letterSpacing: '2px', color: '#EF7E2E', marginBottom: 12,
   },
   heroTitle: { fontSize: '2.8rem', fontWeight: 800, marginBottom: 16, lineHeight: 1.2 },
-  accent: { color: '#4361ee' },
+  accent: { color: '#EF7E2E' },
   heroSub: { fontSize: '1.15rem', color: '#adb5bd', maxWidth: 680, margin: '0 auto', lineHeight: 1.7 },
   container: { maxWidth: 1100, margin: '0 auto', padding: '0 24px' },
   section: { padding: '80px 0' },
   sectionAlt: { padding: '80px 0', background: '#f8f9fa' },
-  sectionDark: { padding: '80px 0', background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)', color: '#fff' },
+  sectionDark: { padding: '80px 0', background: 'linear-gradient(135deg, #374898 0%, #2d3d80 100%)', color: '#fff' },
   sectionLabel: {
     display: 'inline-block', fontSize: '0.8rem', fontWeight: 600,
-    textTransform: 'uppercase', letterSpacing: '2px', color: '#4361ee', marginBottom: 12,
+    textTransform: 'uppercase', letterSpacing: '2px', color: '#EF7E2E', marginBottom: 12,
   },
-  sectionTitle: { fontSize: '2rem', fontWeight: 800, marginBottom: 16, color: '#1a1a2e' },
+  sectionTitle: { fontSize: '2rem', fontWeight: 800, marginBottom: 16, color: '#374898' },
   sectionTitleWhite: { fontSize: '2rem', fontWeight: 800, marginBottom: 16, color: '#fff' },
   sectionSub: { fontSize: '1.05rem', color: '#6c757d', maxWidth: 640, lineHeight: 1.7, marginBottom: 40 },
   sectionSubWhite: { fontSize: '1.05rem', color: '#adb5bd', maxWidth: 640, lineHeight: 1.7, marginBottom: 40 },
@@ -36,15 +36,15 @@ const s = {
     background: '#fff', borderRadius: 12, padding: 28, boxShadow: '0 4px 12px rgba(0,0,0,0.08)',
     borderLeft: '4px solid #e74c3c',
   },
-  problemTitle: { fontSize: '1.1rem', fontWeight: 700, color: '#1a1a2e', marginBottom: 8 },
+  problemTitle: { fontSize: '1.1rem', fontWeight: 700, color: '#374898', marginBottom: 8 },
   problemDesc: { fontSize: '0.95rem', color: '#6c757d', lineHeight: 1.6 },
 
   // Comparison cards
   compGrid: { display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: 32, marginTop: 40 },
   compCard: (isWaas) => ({
     borderRadius: 16, padding: 32,
-    background: isWaas ? 'linear-gradient(135deg, #4361ee 0%, #3a56d4 100%)' : '#fff',
-    color: isWaas ? '#fff' : '#1a1a2e',
+    background: isWaas ? 'linear-gradient(135deg, #EF7E2E 0%, #d96b1f 100%)' : '#fff',
+    color: isWaas ? '#fff' : '#374898',
     boxShadow: isWaas ? '0 8px 32px rgba(67,97,238,0.3)' : '0 4px 12px rgba(0,0,0,0.08)',
     border: isWaas ? 'none' : '2px solid #dee2e6',
     position: 'relative',
@@ -75,10 +75,10 @@ const s = {
   },
   stepNum: {
     display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
-    width: 48, height: 48, borderRadius: '50%', background: '#eef1ff',
-    color: '#4361ee', fontWeight: 800, fontSize: '1.2rem', marginBottom: 16,
+    width: 48, height: 48, borderRadius: '50%', background: '#FFF5ED',
+    color: '#EF7E2E', fontWeight: 800, fontSize: '1.2rem', marginBottom: 16,
   },
-  stepTitle: { fontSize: '1.05rem', fontWeight: 700, color: '#1a1a2e', marginBottom: 8 },
+  stepTitle: { fontSize: '1.05rem', fontWeight: 700, color: '#374898', marginBottom: 8 },
   stepDesc: { fontSize: '0.9rem', color: '#6c757d', lineHeight: 1.6 },
 
   // Metrics
@@ -88,13 +88,13 @@ const s = {
     background: 'rgba(255,255,255,0.08)', borderRadius: 12,
     border: '1px solid rgba(255,255,255,0.12)',
   },
-  metricValue: { fontSize: '2.4rem', fontWeight: 800, color: '#4361ee', marginBottom: 4 },
+  metricValue: { fontSize: '2.4rem', fontWeight: 800, color: '#EF7E2E', marginBottom: 4 },
   metricLabel: { fontSize: '0.9rem', color: '#adb5bd', fontWeight: 500 },
 
   // Tool-agnostic
   toolGrid: { display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))', gap: 16, marginTop: 32 },
   toolTag: {
-    background: '#eef1ff', color: '#4361ee', borderRadius: 8, padding: '12px 16px',
+    background: '#FFF5ED', color: '#EF7E2E', borderRadius: 8, padding: '12px 16px',
     fontWeight: 600, fontSize: '0.9rem', textAlign: 'center',
   },
 
@@ -103,16 +103,16 @@ const s = {
   industryCard: (isPrimary) => ({
     background: '#fff', borderRadius: 12, padding: 24, textAlign: 'center',
     boxShadow: '0 4px 12px rgba(0,0,0,0.08)',
-    border: isPrimary ? '2px solid #4361ee' : '2px solid transparent',
+    border: isPrimary ? '2px solid #EF7E2E' : '2px solid transparent',
   }),
-  industryIcon: { color: '#4361ee', marginBottom: 12 },
-  industryTitle: { fontSize: '1rem', fontWeight: 700, color: '#1a1a2e', marginBottom: 4 },
-  industryTag: { fontSize: '0.75rem', color: '#4361ee', fontWeight: 600, textTransform: 'uppercase', letterSpacing: 1 },
+  industryIcon: { color: '#EF7E2E', marginBottom: 12 },
+  industryTitle: { fontSize: '1rem', fontWeight: 700, color: '#374898', marginBottom: 4 },
+  industryTag: { fontSize: '0.75rem', color: '#EF7E2E', fontWeight: 600, textTransform: 'uppercase', letterSpacing: 1 },
 
   // CTA
   cta: {
     padding: '80px 0',
-    background: 'linear-gradient(135deg, #4361ee 0%, #3a56d4 100%)',
+    background: 'linear-gradient(135deg, #EF7E2E 0%, #d96b1f 100%)',
     textAlign: 'center', color: '#fff',
   },
   ctaTitle: { fontSize: '2rem', fontWeight: 800, marginBottom: 16 },
@@ -121,7 +121,7 @@ const s = {
   btnWhite: {
     display: 'inline-flex', alignItems: 'center', gap: 8,
     padding: '14px 28px', borderRadius: 8, fontWeight: 600, fontSize: '1rem',
-    background: '#fff', color: '#4361ee', textDecoration: 'none',
+    background: '#fff', color: '#EF7E2E', textDecoration: 'none',
     border: 'none', cursor: 'pointer',
   },
   btnOutlineWhite: {

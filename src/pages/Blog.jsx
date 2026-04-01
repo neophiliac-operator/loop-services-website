@@ -3,7 +3,7 @@ import blogPosts from '../data/blogPosts';
 
 const categoryColors = {
   'Logistics': '#e74c3c',
-  'Business Strategy': '#4361ee',
+  'Business Strategy': '#EF7E2E',
   'Operations': '#2ecc71',
   'BPO Strategy': '#f39c12',
   'Technology': '#9b59b6',
@@ -16,7 +16,7 @@ const categoryColors = {
 
 const styles = {
   hero: {
-    background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)',
+    background: 'linear-gradient(135deg, #374898 0%, #2d3d80 100%)',
     padding: '100px 0 60px',
     textAlign: 'center',
     color: '#fff',
@@ -27,7 +27,7 @@ const styles = {
     fontWeight: 600,
     textTransform: 'uppercase',
     letterSpacing: '2px',
-    color: '#4361ee',
+    color: '#EF7E2E',
     marginBottom: 12,
   },
   heroTitle: {
@@ -61,7 +61,7 @@ const styles = {
   },
   imagePlaceholder: {
     height: 200,
-    background: 'linear-gradient(135deg, #1a1a2e 0%, #4361ee 100%)',
+    background: 'linear-gradient(135deg, #374898 0%, #EF7E2E 100%)',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
@@ -88,7 +88,7 @@ const styles = {
     fontSize: '0.75rem',
     fontWeight: 600,
     color: '#fff',
-    background: color || '#4361ee',
+    background: color || '#EF7E2E',
   }),
   readTime: {
     color: '#868e96',
@@ -96,7 +96,7 @@ const styles = {
   cardTitle: {
     fontSize: '1.2rem',
     fontWeight: 700,
-    color: '#1a1a2e',
+    color: '#374898',
     marginBottom: 8,
     lineHeight: 1.3,
   },
@@ -108,7 +108,7 @@ const styles = {
     marginBottom: 16,
   },
   cardLink: {
-    color: '#4361ee',
+    color: '#EF7E2E',
     fontWeight: 600,
     fontSize: '0.9rem',
     display: 'inline-flex',

@@ -7,14 +7,14 @@ const pct = (n) => Math.round(n) + '%';
 
 const s = {
   hero: {
-    background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)',
+    background: 'linear-gradient(135deg, #374898 0%, #2d3d80 100%)',
     padding: '100px 0 60px',
     textAlign: 'center',
     color: '#fff',
   },
   heroLabel: {
     display: 'inline-block', fontSize: '0.8rem', fontWeight: 600,
-    textTransform: 'uppercase', letterSpacing: '2px', color: '#4361ee', marginBottom: 12,
+    textTransform: 'uppercase', letterSpacing: '2px', color: '#EF7E2E', marginBottom: 12,
   },
   heroTitle: { fontSize: '2.5rem', fontWeight: 800, marginBottom: 16 },
   heroSub: { fontSize: '1.1rem', color: '#adb5bd', maxWidth: 640, margin: '0 auto', lineHeight: 1.7 },
@@ -29,17 +29,17 @@ const s = {
   selectorLabel: { fontSize: '0.8rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: 1, color: '#868e96', marginBottom: 12 },
   catGrid: { display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10 },
   catBtn: (active) => ({
-    padding: '14px 16px', borderRadius: 8, border: active ? '2px solid #4361ee' : '2px solid #dee2e6',
-    background: active ? '#eef1ff' : '#fff', cursor: 'pointer', textAlign: 'left',
+    padding: '14px 16px', borderRadius: 8, border: active ? '2px solid #EF7E2E' : '2px solid #dee2e6',
+    background: active ? '#FFF5ED' : '#fff', cursor: 'pointer', textAlign: 'left',
     transition: 'all 0.2s ease', fontSize: '0.9rem', fontWeight: 600,
-    color: active ? '#4361ee' : '#343a40',
+    color: active ? '#EF7E2E' : '#343a40',
   }),
   roleBtn: (active) => ({
-    padding: '12px 16px', borderRadius: 8, border: active ? '2px solid #4361ee' : '2px solid #dee2e6',
-    background: active ? '#eef1ff' : '#fff', cursor: 'pointer', textAlign: 'left',
+    padding: '12px 16px', borderRadius: 8, border: active ? '2px solid #EF7E2E' : '2px solid #dee2e6',
+    background: active ? '#FFF5ED' : '#fff', cursor: 'pointer', textAlign: 'left',
     transition: 'all 0.2s ease', marginBottom: 8, width: '100%',
   }),
-  roleTitle: (active) => ({ fontSize: '0.9rem', fontWeight: 600, color: active ? '#4361ee' : '#343a40', marginBottom: 2 }),
+  roleTitle: (active) => ({ fontSize: '0.9rem', fontWeight: 600, color: active ? '#EF7E2E' : '#343a40', marginBottom: 2 }),
   roleDesc: { fontSize: '0.78rem', color: '#868e96', lineHeight: 1.4 },
   // Slider
   sliderSection: {
@@ -51,7 +51,7 @@ const s = {
     borderRadius: 4, outline: 'none', cursor: 'pointer',
   },
   sliderValue: {
-    fontSize: '2rem', fontWeight: 800, color: '#4361ee', minWidth: 60, textAlign: 'center',
+    fontSize: '2rem', fontWeight: 800, color: '#EF7E2E', minWidth: 60, textAlign: 'center',
   },
   // Results
   results: { display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 24, marginBottom: 32 },
@@ -66,7 +66,7 @@ const s = {
   chartSection: {
     background: '#fff', borderRadius: 12, padding: 32, boxShadow: '0 4px 12px rgba(0,0,0,0.1)', marginBottom: 32,
   },
-  chartTitle: { fontSize: '1.2rem', fontWeight: 700, color: '#1a1a2e', marginBottom: 24 },
+  chartTitle: { fontSize: '1.2rem', fontWeight: 700, color: '#374898', marginBottom: 24 },
   barRow: { display: 'flex', alignItems: 'center', gap: 16, marginBottom: 20 },
   barLabel: { width: 160, fontSize: '0.85rem', fontWeight: 600, color: '#343a40', textAlign: 'right', flexShrink: 0 },
   barTrack: { flex: 1, background: '#f1f3f5', borderRadius: 8, height: 40, position: 'relative', overflow: 'hidden' },
@@ -78,11 +78,11 @@ const s = {
   barValue: { fontSize: '0.85rem', fontWeight: 700, color: '#fff' },
   // Summary
   summary: {
-    background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)',
+    background: 'linear-gradient(135deg, #374898 0%, #2d3d80 100%)',
     borderRadius: 12, padding: 40, color: '#fff', textAlign: 'center', marginBottom: 32,
   },
   summaryText: { fontSize: '1.2rem', lineHeight: 1.7, maxWidth: 700, margin: '0 auto 24px' },
-  summaryHighlight: { color: '#4361ee', fontWeight: 700 },
+  summaryHighlight: { color: '#EF7E2E', fontWeight: 700 },
   // Savings grid
   savingsGrid: { display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 20, marginBottom: 32 },
   savingsCard: {
@@ -95,21 +95,21 @@ const s = {
   sources: {
     background: '#f8f9fa', borderRadius: 12, padding: 28, marginTop: 40,
   },
-  sourcesTitle: { fontSize: '0.9rem', fontWeight: 700, color: '#1a1a2e', marginBottom: 12 },
+  sourcesTitle: { fontSize: '0.9rem', fontWeight: 700, color: '#374898', marginBottom: 12 },
   sourceItem: { fontSize: '0.8rem', color: '#868e96', marginBottom: 6, paddingLeft: 16, position: 'relative' },
   methodology: {
-    background: '#eef1ff', borderRadius: 8, padding: 16, marginBottom: 16, fontSize: '0.85rem', color: '#495057', lineHeight: 1.6,
+    background: '#FFF5ED', borderRadius: 8, padding: 16, marginBottom: 16, fontSize: '0.85rem', color: '#495057', lineHeight: 1.6,
   },
 };
 
 const sliderCSS = `
   input[type=range]::-webkit-slider-thumb {
     -webkit-appearance: none; width: 24px; height: 24px; border-radius: 50%;
-    background: #4361ee; cursor: pointer; border: 3px solid #fff; box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    background: #EF7E2E; cursor: pointer; border: 3px solid #fff; box-shadow: 0 2px 6px rgba(0,0,0,0.2);
   }
   input[type=range]::-moz-range-thumb {
     width: 24px; height: 24px; border-radius: 50%;
-    background: #4361ee; cursor: pointer; border: 3px solid #fff; box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    background: #EF7E2E; cursor: pointer; border: 3px solid #fff; box-shadow: 0 2px 6px rgba(0,0,0,0.2);
   }
   @media (max-width: 768px) {
     .roi-selectors, .roi-results, .roi-savings-grid { grid-template-columns: 1fr !important; }
@@ -203,7 +203,7 @@ function ROICalculator() {
                   background: '#f8f9fa', borderRadius: 8, padding: '14px 16px',
                   fontSize: '0.85rem', color: '#495057', lineHeight: 1.5,
                 }}>
-                  <div style={{ fontWeight: 700, color: '#1a1a2e', marginBottom: 4 }}>{role.title}</div>
+                  <div style={{ fontWeight: 700, color: '#374898', marginBottom: 4 }}>{role.title}</div>
                   <div>{role.description}</div>
                   <div style={{ marginTop: 8, fontSize: '0.78rem', color: '#868e96' }}>
                     US Base: {fmt(role.us.baseSalary)} · India Base: {fmt(role.india.baseSalary)}
@@ -268,7 +268,7 @@ function ROICalculator() {
                   <div style={s.savingsLabel}>Monthly Savings</div>
                 </div>
                 <div style={s.savingsCard}>
-                  <div style={{ ...s.savingsValue, color: '#4361ee' }}>{pct(calc.savingsPct)}</div>
+                  <div style={{ ...s.savingsValue, color: '#EF7E2E' }}>{pct(calc.savingsPct)}</div>
                   <div style={s.savingsLabel}>Cost Reduction</div>
                 </div>
               </div>
@@ -295,7 +295,7 @@ function ROICalculator() {
                 <div style={s.barRow}>
                   <div style={s.barLabel}>💰 Your Savings</div>
                   <div style={s.barTrack}>
-                    <div style={s.bar((calc.annualSavings / maxCost) * 100, '#4361ee')}>
+                    <div style={s.bar((calc.annualSavings / maxCost) * 100, '#EF7E2E')}>
                       <span style={s.barValue}>{fmt(calc.annualSavings)}</span>
                     </div>
                   </div>

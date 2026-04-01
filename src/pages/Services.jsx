@@ -112,7 +112,7 @@ export default function Services() {
                   ))}
                 </ul>
                 {item.link && (
-                  <Link to={item.link} style={{ color: '#4361ee', fontWeight: 600, fontSize: '0.9rem', display: 'inline-flex', alignItems: 'center', gap: 6, marginTop: 16, textDecoration: 'none' }}>
+                  <Link to={item.link} style={{ color: '#EF7E2E', fontWeight: 600, fontSize: '0.9rem', display: 'inline-flex', alignItems: 'center', gap: 6, marginTop: 16, textDecoration: 'none' }}>
                     Read More <ArrowRight size={14} />
                   </Link>
                 )}
@@ -135,7 +135,7 @@ export default function Services() {
           <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: 32, marginTop: 40}}>
             <div style={{background: '#fff', borderRadius: 16, padding: 32, border: '2px solid #dee2e6'}}>
               <div style={{fontSize: '0.7rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: 2, color: '#868e96', marginBottom: 12}}>Traditional BPO</div>
-              <h3 style={{fontSize: '1.3rem', fontWeight: 800, marginBottom: 20, color: '#1a1a2e'}}>The Old Way</h3>
+              <h3 style={{fontSize: '1.3rem', fontWeight: 800, marginBottom: 20, color: '#374898'}}>The Old Way</h3>
               {['Sells seats — pay for bodies, not results', 'Uses your tools as-is, no optimization', '5% of interactions audited manually', '5-7 tasks per person per day', 'No real-time performance visibility'].map((item, i) => (
                 <div key={i} style={{display: 'flex', alignItems: 'flex-start', gap: 10, marginBottom: 12, fontSize: '0.95rem', color: '#495057'}}>
                   <span style={{color: '#868e96', flexShrink: 0}}>✕</span>
@@ -143,7 +143,7 @@ export default function Services() {
                 </div>
               ))}
             </div>
-            <div style={{background: 'linear-gradient(135deg, #4361ee 0%, #3a56d4 100%)', borderRadius: 16, padding: 32, color: '#fff'}}>
+            <div style={{background: 'linear-gradient(135deg, #EF7E2E 0%, #d96b1f 100%)', borderRadius: 16, padding: 32, color: '#fff'}}>
               <div style={{fontSize: '0.7rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: 2, color: 'rgba(255,255,255,0.7)', marginBottom: 12}}>Loop WaaS</div>
               <h3 style={{fontSize: '1.3rem', fontWeight: 800, marginBottom: 20}}>The WaaS Way</h3>
               {['Sells outcomes — pay for results, not headcount', 'Wraps tools in AI-powered workspace', '100% of interactions AI-scored', '15-20 tasks per person per day', 'Real-time dashboards + full activity capture'].map((item, i) => (

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const styles = {
   hero: {
-    background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)',
+    background: 'linear-gradient(135deg, #374898 0%, #2d3d80 100%)',
     padding: '100px 0 60px',
     textAlign: 'center',
     color: '#fff',
@@ -14,7 +14,7 @@ const styles = {
     fontWeight: 600,
     textTransform: 'uppercase',
     letterSpacing: '2px',
-    color: '#4361ee',
+    color: '#EF7E2E',
     marginBottom: 12,
   },
   heroTitle: {
@@ -46,7 +46,7 @@ const styles = {
   formTitle: {
     fontSize: '1.5rem',
     fontWeight: 700,
-    color: '#1a1a2e',
+    color: '#374898',
     marginBottom: 24,
   },
   fieldGroup: {
@@ -107,7 +107,7 @@ const styles = {
   infoTitle: {
     fontSize: '1.2rem',
     fontWeight: 700,
-    color: '#1a1a2e',
+    color: '#374898',
     marginBottom: 20,
   },
   infoItem: {
@@ -135,7 +135,7 @@ const styles = {
     lineHeight: 1.5,
   },
   ctaCard: {
-    background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)',
+    background: 'linear-gradient(135deg, #374898 0%, #2d3d80 100%)',
     borderRadius: 12,
     padding: 32,
     color: '#fff',
